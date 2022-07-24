@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+
+    body
+    {
+
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-color: #efedd6;
+        overflow-x: hidden;
+
+
+    }
+
+    img
+    {
+        width: 100%;
+
+    }
+
+    h1
+    {
+     
+        margin: 10px;
+
+    }
+
+    .box
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        height: 150px;
+        border-radius: 10px;
+        width: 300px;
+        margin: 10px;
+        box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+        transform: translateX(400%);
+        background-color: steelblue;
+        transition: .4s ease-in-out;
+        overflow: hidden;
+        font-size: .8rem;
+        font-style: italic;
+    }
+    h3{margin-left: 10px;}
+
+    audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+
+
+.audio
+{
+    background-color: #f1f3f4;
+}
+
+    .box:nth-of-type(even)
+    {
+        transform: translateX(-400%);
+    }
+
+    
+    .box.show
+    {
+        transform: translateX(0);
+        cursor: pointer;
+    }
